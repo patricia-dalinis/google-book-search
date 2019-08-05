@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
 // Define API routes here
 
 const mongoose = require("mongoose");
-const mongoURL = process.env.PROD_MONGODB || "mongodb://localhost/googlebooks"
+const mongoURL = process.env.PROD_MONGODB || "mongodb://localhost:27017/googlebooks"
 mongoose.connect(mongoURL, {useNewUrlParser: true})
   .then(() => {
     console.log("Successfully connected to mongoDB.");
