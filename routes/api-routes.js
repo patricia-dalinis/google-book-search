@@ -11,7 +11,7 @@ module.exports = function(app) {
             }
         ).catch(
             (err) => {
-                res.json({error: err});
+                res.json({error: err.response});
             }
         );
     });
@@ -26,7 +26,7 @@ module.exports = function(app) {
             }
         ).catch(
             (err) => {
-                res.json({error: err})
+                res.json({error: err.response})
             }
         );
     });
@@ -38,7 +38,7 @@ module.exports = function(app) {
             }
         ).catch(
             (err) => {
-                res.json({error: err});
+                res.json({error: err.response});
             }
         );
     });
@@ -50,7 +50,7 @@ module.exports = function(app) {
             }
         ).catch(
             (err) => {
-                res.json({error: err});
+                res.json({error: err.response});
             }
         );
     });
